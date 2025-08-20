@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  flask-app:
+    build: .
+    container_name: flask-app-rag
+    environment:
+      MONGO_URI: "mongodb://root:root@host.docker.internal:27017/ai-service?authSource=admin"
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
