@@ -16,3 +16,7 @@ class ArticleRepository:
 
     def list_all(self):
         return list(articles.find({}, {"_id": 0, "articleId": 1, "content": 1}))
+
+    def delete(self, articleId):
+        embedding_article_delete = articles.delete_one({"articleId": articleId})
+        return embedding_article_delete.deleted_count > 0

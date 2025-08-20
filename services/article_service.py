@@ -19,3 +19,6 @@ class ArticleService:
 
     def list_articles(self):
         return self.repo.list_all()
+
+    def delete_article_embedding(self, articleId):
+        return self.repo.delete(articleId)
