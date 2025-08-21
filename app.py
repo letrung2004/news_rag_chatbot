@@ -7,7 +7,7 @@ from services.rag_chat import Chatbot
 app = Flask(__name__)
 CORS(app)
 
-GOOGLE_API_KEY = "AIzaSyAGXyz4q6xk3QaRTo4dIjesz-QZlhSI-oY"
+GOOGLE_API_KEY = "API_GEMINI_KEY"
 
 article_service = ArticleService(google_api_key=GOOGLE_API_KEY)
 embedding_service = article_service.embedding_service

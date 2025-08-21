@@ -29,7 +29,7 @@ class Chatbot:
     def generate_answer_with_gemini(self, context, question):
         prompt = f"""
         Bạn là trợ lý báo thông minh MAGNEWS.
-        Dựa trên nội dung tài liệu được cung cấp, hãy trả lời câu hỏi sau.
+        Dựa trên nội dung bài báo được cung cấp, hãy trả lời câu hỏi sau.
 
         Câu hỏi:
         {question}
